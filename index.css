@@ -1,0 +1,113 @@
+@import url(
+    'https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1484772905198-b77efdb9856a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80');
+    background-position: center center;
+    background-size: cover;
+    font-family: "Poppins";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+
+
+.snow {
+    position: absolute;
+    top: -3vh;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+    z-index: 3;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+
+    }
+}
+
+.snowBtn {
+    border: none;
+    background-color: cornflowerblue;
+    border-radius: 0.3rem;
+    color: rgb(0, 255, 255);
+    font-size: 1.5rem;
+    width: 15rem;
+    padding: 1rem 2rem;
+    outline: none;
+    box-shadow: 2px 2px 5px rgb(65, 64, 64);
+    transition: transform 0.1s linear;
+    margin: 2rem;
+    z-index: 2;
+}
+
+.snowBtn:active {
+    box-shadow: 0;
+    transform: translate(4px, 4px);
+}
+
+.wrap {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    opacity: 1;
+    transition: opacity 0.2s ease-out;
+    opacity: 1;
+    z-index: 1;
+}
+
+.wrap.active {
+    opacity: 0;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 4rem;
+    margin-top: -10rem;
+}
+
+.big-text {
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 1;
+    margin: 0 2rem;
+}
+
+.countdown-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.countdown-el {
+    text-align: center;
+}
+
+.countdown-el span {
+    font-size: 1.5rem;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
