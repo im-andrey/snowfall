@@ -5,7 +5,7 @@ const hoursEl = document.getElementById('hours')
 const minsEl = document.getElementById('mins')
 const secondsEl = document.getElementById('seconds')
 
-const newYears = '01 Jan 2021';
+const newYears = '01 Jan 2022';
 let toggle = true
 var timer
 
